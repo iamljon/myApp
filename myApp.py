@@ -1,9 +1,10 @@
 import streamlit as st
 
 
-st.write("This is my first app")
+st.write("Get sentiment of FX pairs")
 
-x = st.slider("select a number") 
-st.write("You chose", x)
-st.write("You chose", x)
 
+user_input = st.text_input("What currency pair are you looking at?", "EURUSD")
+
+sentimentScore = st.slider("select a number") 
+st.write("You chose", sentimentScore)
